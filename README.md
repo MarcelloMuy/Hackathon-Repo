@@ -115,17 +115,22 @@ For the site pages the wireframe preliminary layout designs can be seen below. T
 - Main Page
 
 <p align="center">
-    <img src=""?raw=true alt=" wireframe design prototype used for the site design"></p>
+    <img src="images/Index page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the main page design"></p>
 
-- Contact Page
-
-<p align="center">
-    <img src=""?raw=true alt=" wireframe design prototype used for the site design"></p>
-
-- Message Sent Page
+- User Category Transition Page
 
 <p align="center">
-    <img src=""?raw=true alt=" wireframe design prototype used for the site design"></p>
+    <img src="images/Transition page layout(Student, Parent, Career) page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
+
+- Login - Register Page
+
+<p align="center">
+    <img src="images/Login - Register page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the login page design"></p>
+
+- User Profile and Resources Page
+
+<p align="center">
+    <img src="/workspace/Hackathon-Repo/images/Profile and Resources page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
 
 <p align="right"><a href="#home">Return to table of contents</a></p><p id="test"></p>
 
