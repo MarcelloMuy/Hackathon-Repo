@@ -1,108 +1,260 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **[HACKATHON Neuteralisers - Gender Equality in Tech - September 2022.](https://Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials/)**
 
-Welcome USER_NAME,
+## **HACKATHON Neuteralisers - Gender Equality in Tech - September 2022.**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<p align="center">
+  <img src="#"?raw=true alt="responsive web design"></p>
+  <p id="home"></p>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of contents
+TBC
+- <a href="#intro">Introduction</a>
+- <a href="#dg">Design Goals</a>TBC
+- <a href="#df">Design Features</a>
+- <a href="#us">User Story</a>
+- <a href="#wire">Wireframes</a>
+- <a href="#test">Testing</a>
+- <a href="#dep">Deployment</a>
+- <a href="#pib">Previous Iterations and Bugs</a>
+- <a href="#fa">Future Aspirations</a>
+- <a href="#tools">Tools used and Coding Inspiration</a>
 
-## Gitpod Reminders
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="intro"></p>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## **INTRODUCTION.**
 
-`python3 -m http.server`
+ [Hackathon 2022](https:///)
 
-A blue button should appear to click: _Make Public_,
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="dg"></p>
 
-Another blue button should appear to click: _Open Browser_.
+## **DESIGN GOALS.**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="df"></p>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## **DESIGN FEATURES.**
 
-To log into the Heroku toolbelt CLI:
+- ### **TBC.**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<p align="center">
+  <img src=""?raw=true alt=""></p>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+ 
 
-------
+- ### **TBC**
 
-## Release History
+<p align="center">
+  <img src=""?raw=true alt=""></p>
+  
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+-  #### **TBC**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<p align="center">
+ <img src=""?raw=true alt=""></p>
+ <p align="center">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- ## **TBC**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<p align="center">
+ <img src=""?raw=true alt=""></p>
+ <p align="center">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ - ## **TBC**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<p align="center">
+ <img src=""?raw=true alt=""></p>
+ <p align="center">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - ## **TBC**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  <p align="center">
+ <img src=""?raw=true alt=""></p>
+ <p align="center">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+ 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - ## **TBC**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  <p align="center">
+ <img src=""?raw=true alt=""></p>
+ <p align="center">
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- ## **COLOUR PALETTE.**
+  
 
-------
+  <p align="center">
+    <img src=""?raw=true alt=""></p>
+ 
 
-## FAQ about the uptime script
+These colours provide a high level of contrast for users with impaired vison, as confirmed in the testing section below. They also add to the overall goal of creating a clear and engaging design ethos. The colors were chosen in conjunction with the background image to present a smooth, related connection across the application. This helps provide consistency to the overall aesthetic flow of the user experience.
 
-**Why have you added this script?**
+- ### **Font.**
+  
+---
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="us"></p>
 
-**How will this affect me?**
+## **USER STORY.**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* ### **Returning Users.**
+  
 
 ---
 
-Happy coding!
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="wire"></p>
+
+## **WIREFRAMES.**
+
+For the site pages the wireframe preliminary layout designs can be seen below. These were created using [Balsamiq](https://balsamiq.com/):
+
+- Main Page
+
+<p align="center">
+    <img src="images/Index page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the main page design"></p>
+
+- User Category Transition Page
+
+<p align="center">
+    <img src="images/Transition page layout(Student, Parent, Career) page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
+
+- Login - Register Page
+
+<p align="center">
+    <img src="images/Login - Register page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the login page design"></p>
+
+- User Profile and Resources Page
+
+<p align="center">
+    <img src="/workspace/Hackathon-Repo/images/Profile and Resources page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
+
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="test"></p>
+
+## **TESTING.**
+
+- ### **HTML Testing**
+
+  
+
+
+<p align="center">
+    <img src=""?raw=true alt=""></p>
+
+
+- ### **CSS Testing**
+
+  
+
+<p align="center">
+    <img src=""?raw=true alt=""></p>
+
+- ### **Chrome Dev Tools - Lighthouse - Testing**
+
+  The Chrome dev tool - Lighthouse - Tests the overall performance, Accessibility, Web Development best practices and SEO. The following results were confirmed:
+
+<p align="center">
+    <img src=""?raw=true alt=""></p>
+
+- ### **Responsiveness Testing**
+
+The following sites were used to test the web applications responsiveness: [Am I Responsive](https://ui.dev/amiresponsive) and [Media Genesis Responsive Design Checker](https://responsivedesignchecker.com/)
+
+The 'Am I responsive generator' result image has been used at the start of this readme file. Please see the image at the top for the results. This page focuses on the following image viewport sizes -
+  Desktop
+  1600x992px scaled down to scale(0.3181)
+  Laptop
+  1280x802px scaled down to scale(0.277)
+  Tablet
+  768x1024px scaled down to scale(0.219)
+  Mobile
+  320x480px scaled down to scale(0.219). The site results indicate good performance on all viewport sizes.
+
+The Media Genesis page gives the option to test the page on several different viewport screen sizes from Desktop 24 inch 1920 x 1200px resolution all the way down to the mobile viewport size of 320 x 480px. The site performed very well on all viewport size options.
+
+- ### **Contrast/ Accessibility Testing**
+
+The [Wave Accessibilty testing tool](https://wave.webaim.org/) was used to check to test the page contrast and accessibilty of the application.
+
+The colour contrast was AAA rated.
+
+<p align="center">
+    <img src=""?raw=true alt=" Wave accesibility tool testing results"></p>
+
+- ### **JavaScript Testing**
+
+[JS Hint](https://jshint.com/) was used to check the quality and functionality of the JavaScript code. No significant issues were recorded and the rest of the feedback was directed at tidying up the syntax. 
+
+- ### **User Testing**
+
+All page links and button functionality were tested including ascertaining that all social media links opened in separate tabs and that all icon play buttons were correctly configured and provided the correct feedback to the user, as indicated. The page was stringently put through it's paces.
+
+---
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="dep"></p>
+
+## **DEPLOYMENT.**
+
+The most recent iteration of the WebLife application has been deployed via Github pages. The following instructions clarify the process.
+
+1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [) (Hover over this link for the complete repository url)
+2. Click on the 'Settings' icon in the menu below the repository title.
+3. Click on the Pages option in the settings page menu on the left hand side of the screen.
+4. Click on the dropdown button "None" and select 'Master' or 'Main' Branch".
+5. This will cause the page to automatically refresh and a link to the fully deployed site will be displayed towards the top of the page. There may be a brief delay during this process to accomodate Github as it prepares the application for deployment.
+
+Should you wish to 'Fork' or 'Clone' the repository please follow these instructions:
+
+- ### **Forking the Repository**
+  Forking enables a third party to create a copy of the repository in order to view and/or make changes without affecting the original.
+
+1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [)
+2. Towards the top right of the repository page, underneath the user icon you will find and click the "Fork" Button.
+3. You will now have successfully created a copy of the original repository within your GitHub account.
+
+- ### **Cloning the Repository**
+  Follow these instructions to create a clone of the repository within your local development environment to make it easier to fix merge conflicts, add or remove files, and push larger commits.
+
+1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [)
+2. Above the file list on the repository page locate and click the 'Code' button (beside the 'Add file' button)
+3. Copy the provided link depending on your desired option for either 'HTTPS', 'SSH key' or 'GitHub CLI.
+4. Open Git Bash and change the current working directory to the location where you want the cloned directory to be made.
+5. Type `git clone`, and then paste the specific URL you copied in Step 3.
+
+---
+
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="pib"></p>
+
+## **BUGS.**
+
+---
+
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="fa"></p>
+
+## **FUTURE ASPIRATIONS.**
+
+
+<p align="right"><a href="#home">Return to table of contents</a></p><p id="tools"></p>
+
+## **TOOLS USED AND CODING INSPIRATION.**
+
+The following tools, pages and tutorials were invaluable in helping complete this project:
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [GitPod](https://www.gitpod.io/)
+- [GitHub](https://github.com/)
+- [Chrome Developer Tools. Application testing.](https://developer.chrome.com/docs/devtools/)
+- [W3C Markup Validation Service. HTML testing.](https://validator.w3.org/)
+- [W3C CSS Validation Service. CSS testing.](https://jigsaw.w3.org/css-validator/)
+- [JS Hint testing JavaScript code](https://jshint.com/)
+- [Am I Responsive. Responsiveness testing.](https://ui.dev/amiresponsive)
+- [Media Genesis Responsive Design Checker. Responsiveness testing.](https://responsivedesignchecker.com/)
+- [Wave Accessibilty testing tool. Accessibility and Contrast testing.](https://wave.webaim.org/)
+
+
+
+<p align="right"><a href="#home">Return to table of contents</a></p>
