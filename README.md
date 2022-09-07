@@ -130,7 +130,7 @@ For the site pages the wireframe preliminary layout designs can be seen below. T
 - User Profile and Resources Page
 
 <p align="center">
-    <img src="/workspace/Hackathon-Repo/images/Profile and Resources page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
+    <img src="images/Profile and Resources page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
 
 <p align="right"><a href="#home">Return to table of contents</a></p><p id="test"></p>
 
