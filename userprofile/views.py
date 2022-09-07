@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def user_profile(request):
     """This view returns the user profile page."""
-    return render(request, 'myprofile.html')
+    return render(request, 'userprofile/userprofile.html')
