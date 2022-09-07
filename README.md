@@ -102,8 +102,11 @@ These colours provide a high level of contrast for users with impaired vison, as
 
 
 * ### **Returning Users.**
-  
 
+---
+## **Concept Map.**  
+<p align="center">
+    <img src="images/Concept map.PNG"?raw=true alt=" wireframe design prototype used for the main page design"></p>
 ---
 
 <p align="right"><a href="#home">Return to table of contents</a></p><p id="wire"></p>
