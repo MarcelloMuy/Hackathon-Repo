@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- CSS Links -->
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% block content %}
+
+<h1>
+    Hi {{ myprofile.user }}!
+</h1>
+
+{% endblock %}
