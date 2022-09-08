@@ -6,20 +6,26 @@
 
 body {
   font-family: 'Roboto';
-  color: wheat;
+  color: white;
   margin: 0;
   background-color: rgb(27,32,40);
+  background: url("/static/images/texture.jpg") no-repeat fixed;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
+/* NAVBAR */
+
 .navbar-brand, .navbar-brand:hover {
-  color: white;
+  color: black;
   font-size: 4rem;
+  font-weight: bold;
   margin-left: 30px;
 }
 
-
 .nav-link {
   color: white;
+  font-weight: bold;
   font-size: 2rem;
   margin-left: 15px;
   margin-right: 15px;
@@ -30,4 +36,72 @@ body {
   color: white;
   border-bottom: white 2px solid;
   margin-top: 30px
+}
+
+/* Intro Section */
+
+#intro-container {
+  margin-top: 125px;
+  border: white solid 3px;
+  border-radius: 25px;
+  padding: 0px;
+}
+
+#intro-overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 25px;
+  }
+#intro-heading {
+  color: white;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.intro-text {
+  font-size: 1.8rem;
+  padding: 20px;
+}
+
+#hero-image {
+  margin-top: 125px;
+  margin-left: 75px;
+}
+
+/* WHO SECTION */
+
+#who-section {
+  margin-top: 25px;
+  background: white;
+  padding-bottom: 100px;
+}
+
+#who-heading {
+  margin-top: 50px;
+  font-size: 3rem;
+  color: black;
+}
+
+.who-list {
+  color: black;
+  list-style-type: none;
+}
+
+.who-list-option {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* FOOTER */
+
+#main-footer {
+  background-color: rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 20px;
 }
