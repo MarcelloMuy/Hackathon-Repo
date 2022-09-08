@@ -9,4 +9,22 @@
     Hi {{ myprofile.user }}, you are a {{ myprofile.role }}!
 </h1>
 
+<!-- Selects resources by level -->
+{% for r in resources %}
+    {% if r.level == 2 %}
+    <!-- Card example -->
+    <div class="card" style="width: 18rem; background-color: black;">
+        <div class="card-body">
+            <p>
+                {{ r.name }}
+            </p>
+            <p>
+                {{ r.link }}
+            </p>
+        </div>
+    </div>    
+    {% endif %}
+{% endfor %}
+
+
 {% endblock %}

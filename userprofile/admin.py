@@ -1,6 +1,6 @@
 """Imported"""
 from django.contrib import admin
-from .models import UserProfile, Role
+from .models import UserProfile, Role, Resource
 
 # Register your models here.
 
@@ -19,5 +19,16 @@ class RoleAdmin(admin.ModelAdmin):
         'desc',
     )
 
+
+class ResourceAdmin(admin.ModelAdmin):
+    """Admin Resource"""
+    list_display = (
+        'name',
+        'link',
+        'level',
+    )
+
+
 admin.site.register(UserProfile, UserProfileAdmin)
 admin.site.register(Role, RoleAdmin)
+admin.site.register(Resource, ResourceAdmin)

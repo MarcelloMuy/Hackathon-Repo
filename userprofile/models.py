@@ -1,6 +1,7 @@
 """Imported"""
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
@@ -21,6 +22,20 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
+class Resource(models.Model):
+    """A model for user role options"""
+    name = models.CharField(max_length=250)
+    link = models.URLField()
+    roles = models.ManyToManyField(Role)
+    level = models.PositiveSmallIntegerField(
+        default=0,
+        validators=[MinValueValidator(0), MaxValueValidator(5)]
+        )
+
+    def __str__(self):
+        return self.name
 
 
 @receiver(post_save, sender=User)
