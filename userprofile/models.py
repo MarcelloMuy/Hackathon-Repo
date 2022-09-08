@@ -29,7 +29,7 @@ class UserProfile(models.Model):
 
 
 class Resource(models.Model):
-    """A model for user role options"""
+    """A model for Resources"""
     name = models.CharField(max_length=250)
     link = models.URLField()
     roles = models.ManyToManyField(Role)
@@ -40,6 +40,16 @@ class Resource(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Progress(models.Model):
+    """A model for tracking progress"""
+    userprofile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    resource = models.ForeignKey(Resource, on_delete=models.CASCADE)
+    done = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.userprofile.level
 
 
 @receiver(post_save, sender=User)

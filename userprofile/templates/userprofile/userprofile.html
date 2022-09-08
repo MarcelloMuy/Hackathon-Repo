@@ -16,15 +16,17 @@
     <div class="card" style="width: 18rem; background-color: black;">
         <div class="card-body">
             <p>
-                {{ r.name }}
+               Article: {{ r.name }}
             </p>
-            <p>
-                {{ r.link }}
-            </p>
+            <form method="POST" action="{{ r.link }}" target="_blank">
+                {% csrf_token %}
+                <button class="btn btn-info" name="accessbtn">Open Article</button>
+            </form>
         </div>
     </div>    
     {% endif %}
 {% endfor %}
 
+{{ progress }}
 
 {% endblock %}

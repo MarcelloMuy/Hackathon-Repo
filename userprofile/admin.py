@@ -1,6 +1,6 @@
 """Imported"""
 from django.contrib import admin
-from .models import UserProfile, Role, Resource
+from .models import UserProfile, Role, Resource, Progress
 
 # Register your models here.
 
@@ -29,6 +29,16 @@ class ResourceAdmin(admin.ModelAdmin):
     )
 
 
+class ProgressAdmin(admin.ModelAdmin):
+    """Admin Progress"""
+    list_display = (
+        'userprofile',
+        'resource',
+        'done',
+    )
+
+
 admin.site.register(UserProfile, UserProfileAdmin)
 admin.site.register(Role, RoleAdmin)
 admin.site.register(Resource, ResourceAdmin)
+admin.site.register(Progress, ProgressAdmin)
