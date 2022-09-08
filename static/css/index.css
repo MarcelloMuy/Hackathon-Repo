@@ -1,7 +1,11 @@
 /* Intro Section */
 
+#intro-section {
+  padding-bottom: 50px;
+}
+
 #intro-container {
-    margin-top: 200px;
+    margin-top: 250px;
     border: white solid 3px;
     border-radius: 25px;
     padding: 0px;
@@ -19,16 +23,18 @@
   #intro-heading {
     color: white;
     font-size: 3rem;
+    font-family: 'Poiret One';
     padding: 20px;
   }
   
   .intro-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-family: 'Poiret One';
     padding: 20px;
   }
   
   #hero-image {
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 75px;
   }
   
