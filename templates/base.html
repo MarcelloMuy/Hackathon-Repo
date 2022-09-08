@@ -18,6 +18,11 @@
     <title>Hackathon 2022 {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
+    <header>
+        <div class="navbar-fixed">
+          {% include 'includes/main-nav.html' %}
+        </div>
+      </header>
     <h1>Hackathon 2022</h1>
 
     {% if messages %}
