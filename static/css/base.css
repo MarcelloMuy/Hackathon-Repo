@@ -167,3 +167,41 @@ body {
   color:#aaa;
   margin-bottom:0;
 }
+
+/* ---- Transition Content ----*/
+.transition-content {
+  color: black;
+  font-family: nunito, roboto, sans-serif;
+  padding: 20px;
+}
+
+.catchy-headline {
+  text-align: center;
+}
+
+.login-button {
+  /* width: 180px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-top: 5px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .login-button button {
+
+} */
+
+/* .login-button span {
+  text-decoration: none;
+  color: black;
+} */
+
+/* .login-button:hover {
+  background-color: #aaa;
+} */
+
+/* .login-button span:hover {
+  color: white;
+} */
