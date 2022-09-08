@@ -5,9 +5,19 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 
+class Role(models.Model):
+    """A model for user role options"""
+    name = models.CharField(max_length=250)
+    desc = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
 class UserProfile(models.Model):
     """A user profile model"""
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    role = models.ForeignKey(Role, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.user.username
