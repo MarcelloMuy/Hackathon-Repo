@@ -19,6 +19,10 @@ class UserProfile(models.Model):
     """A user profile model"""
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     role = models.ForeignKey(Role, null=True, on_delete=models.SET_NULL)
+    level = models.PositiveSmallIntegerField(
+        default=0,
+        validators=[MinValueValidator(0), MaxValueValidator(5)]
+        )
 
     def __str__(self):
         return self.user.username
