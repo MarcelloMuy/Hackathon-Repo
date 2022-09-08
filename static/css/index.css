@@ -28,7 +28,7 @@
   }
   
   .intro-text {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: 'Poiret One';
     padding: 20px;
   }
@@ -42,14 +42,18 @@
   
   #who-section {
     margin-top: 50px;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
     padding-bottom: 100px;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 150px 150px 0px 0px;
+    border-top: white solid 3px;
+    border-left: rgba(255, 255, 255, 0.5) solid 0.5px;
+    border-right: rgba(255, 255, 255, 0.5) solid 0.5px;
   }
   
   #who-heading {
-    margin-top: 25px;
+    margin-top: 35px;
     font-size: 3rem;
+    font-family: 'Josefin Slab';
     color: black;
   }
   
@@ -59,7 +63,9 @@
   }
   
   .who-list-option {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 30px;
+    font-family: 'Poiret One';
+    font-weight: bold;
   }
   
