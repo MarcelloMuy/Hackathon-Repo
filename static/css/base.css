@@ -25,11 +25,6 @@ body {
   background-color: rgba(255, 255, 255,0.9);
 }
 
-/* .navbar-fixed:not(.navbar-fixed:hover) {
-  transition: 2000ms;
-  background-color: rgba(0,0,0,0.3);
-} */
-
 .navbar-brand, .navbar-brand:hover {
   font-family: 'Poiret One';
   color: grey;
@@ -138,19 +133,40 @@ body {
   text-align: center;
 }
 
-/* .login-button button {
+@media only screen and (max-width: 768px) {
+  .navbar-brand, .navbar-brand:hover {
+    font-family: 'Poiret One';
+    color: grey;
+    font-size: 2rem;
+    margin-left: 0px;
+    font-weight: none !important;
+  }
 
-} */
+  .navbar-toggler-icon {
+    font-size: small;
+    margin: 0px;
+    padding: 0px;
+  }
 
-/* .login-button span {
-  text-decoration: none;
-  color: black;
-} */
+  .nav-link:hover {
+    border-bottom: none;
+  }
 
-/* .login-button:hover {
-  background-color: #aaa;
-} */
+}
 
-/* .login-button span:hover {
-  color: whitesmoke;
-} */
+@media only screen and (max-width: 425px) {
+  .navbar-brand, .navbar-brand:hover {
+    font-family: 'Poiret One';
+    color: grey;
+    font-size: 1.7rem;
+    margin-left: 0px;
+    font-weight: none !important;
+  }
+
+  .navbar-toggler-icon {
+    font-size: small;
+    margin: 0px;
+    padding: 0px;
+  }
+
+}
