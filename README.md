@@ -1,46 +1,90 @@
-# **[HACKATHON Neuteralisers - Gender Equality in Tech - September 2022.](https://Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials/)**
+<!-- # **[HACKATHON Neuteralisers - Gender Equality in Tech - September 2022.](https://Rock-Paper-Scissors-Lizard-Spock---Portfolio-Project-2---JavaScript-Essentials/)** -->
 
-## **HACKATHON Neuteralisers - Gender Equality in Tech - September 2022.**
+# **HACKATHON Neuteralisers - Gender Equality in Tech - September 2022.**
 
-<p align="center">
+<!-- <p align="center">
   <img src="#"?raw=true alt="responsive web design"></p>
-  <p id="home"></p>
+  <p id="home"></p> -->
+<!-- <p align="right"><a href="#home">Return to table of contents</a></p><p id="lf"></p> -->
+<!-- [Hackathon 2022](https:///) -->
+<!-- <p align="right"><a href="#home">Return to table of contents</a></p><p id="df"></p> -->
+
+
+# Intended Purpose of This Website:
+
+  - The purpose of this website is to encourage women of all age groups that a career in both Software Development and the Tech Industry as a whole, would not only be an amazing journey for them, which would change their lives in so many positive ways, but it would also provide the industry with the much needed diversity they seek to encourage in their workplace enviornments.
+
+  -  This website has combined resources from throughout the internet and constructed 3 individualized pathways that are tailored towards women of all ages. 
+
+  - There is a learning pathway targeted at younger girls (2nd level and under), that may be unaware that this career path is something that is not only available to them, but is also something that is highly encouraged among the Tech Industry.
+
+  - There is a learning pathway that is targeted at Female College Students which lays out the path most suited for them to follow. 
+
+  - There is also a learning pathway tailored to Women who may have only discovered this potential career later in life and who may want to attempt a career change.
+
+---
 
 ## Table of contents
-TBC
-- <a href="#intro">Introduction</a>
-- <a href="#dg">Design Goals</a>TBC
-- <a href="#df">Design Features</a>
-- <a href="#us">User Story</a>
+- <a href="#intro" id="intro">Introduction</a>
+- <a href="#lf">Live Features</a>
+- <a href="#df">Desired Features</a>
+- <a href="#us">User Stories</a>
+- <a href="#cm">Concept Map</a>
 - <a href="#wire">Wireframes</a>
 - <a href="#test">Testing</a>
 - <a href="#dep">Deployment</a>
-- <a href="#pib">Previous Iterations and Bugs</a>
-- <a href="#fa">Future Aspirations</a>
+- <a href="#b">Bugs</a>
 - <a href="#tools">Tools used and Coding Inspiration</a>
 
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="intro"></p>
+<p align="right"><a href="#intro" id="lf">Return to table of contents</a></p>
 
-## **INTRODUCTION.**
+## **Live Features.**
 
- [Hackathon 2022](https:///)
+  - Sticky Navbar for Login which implements hover state transitions.
 
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="dg"></p>
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
 
-## **DESIGN GOALS.**
+  - Intro message on Landing Page.
+
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
 
 
+  - Tailored options on Landing Page for Women of all age groups.
 
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="df"></p>
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
 
-## **DESIGN FEATURES.**
+  - Personalised intro section shown via a JavaScript transition.
+
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
+
+  - Sign Up Page. Users can register with Username Email Address and Password
+
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
+
+  - Log In Page. Previous users can Log In with Username Email Address and Password
+
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
+
+   - Resource Path Section. This is tailored to each of the 3 categories
+
+  <p align="center">
+  <img src=""?raw=true alt=""></p>
+
+
+<p align="right"><a href="#intro" id="df">Return to table of contents</a></p>
+
+## **DESIRED FEATURES.**
 
 - ### **TBC.**
 
 <p align="center">
   <img src=""?raw=true alt=""></p>
-
- 
 
 - ### **TBC**
 
@@ -98,18 +142,34 @@ These colours provide a high level of contrast for users with impaired vison, as
 
 <p align="right"><a href="#home">Return to table of contents</a></p><p id="us"></p>
 
-## **USER STORY.**
+# User Stories
 
+- As a First Time User - I want to be informed of this site's purpose quickly - So that I am encouraged to stay engaged.
 
-* ### **Returning Users.**
+- As a First Time User - I want an option to sign up - So that if I am interested I can become a member of the site.
+
+- As a Returning User - I want to be able to log into my account easily - So that I can focus on my goal.
+
+- As a Parent - I want to information presented well - So that I can encourage my daughter to learn to code.
+
+- As a Young Student - I want to learn to code in a fun environment - But I don't know where to start.
+
+- As a Career Changer - I want a flexible learning platform - So that I can learn and work concurrently.
+
+- As a Woman - I want feel like coding is for me - So that I have the confidence to change career.
+
+- As a Parent - I need a basic understanding of what coding is - So that I can understand the career paths available to my child.
+
+<p align="right"><a href="#intro" id="cm">Return to table of contents</a></p>
 
 ---
 ## **Concept Map.**  
 <p align="center">
     <img src="images/Concept map.PNG"?raw=true alt=" wireframe design prototype used for the main page design"></p>
+
 ---
 
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="wire"></p>
+<p align="right"><a href="#intro" id="wire">Return to table of contents</a></p>
 
 ## **WIREFRAMES.**
 
@@ -135,22 +195,18 @@ For the site pages the wireframe preliminary layout designs can be seen below. T
 <p align="center">
     <img src="images/Profile and Resources page Hackathon 2022.jpg"?raw=true alt=" wireframe design prototype used for the transition design"></p>
 
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="test"></p>
+---
+
+<p align="right"><a href="#intro" id="test">Return to table of contents</a></p>
 
 ## **TESTING.**
 
 - ### **HTML Testing**
 
-  
-
-
 <p align="center">
     <img src=""?raw=true alt=""></p>
 
-
 - ### **CSS Testing**
-
-  
 
 <p align="center">
     <img src=""?raw=true alt=""></p>
@@ -210,12 +266,15 @@ The most recent iteration of the WebLife application has been deployed via Githu
 
 Should you wish to 'Fork' or 'Clone' the repository please follow these instructions:
 
-- ### **Forking the Repository**
+<p align="right"><a href="#intro" id="ftrepo">Return to table of contents</a></p>
+
+- ### **Forking the Repository** 
   Forking enables a third party to create a copy of the repository in order to view and/or make changes without affecting the original.
 
 1. Log in to [GitHub](https://github.com/), access the specific GitHub Repository - [)
 2. Towards the top right of the repository page, underneath the user icon you will find and click the "Fork" Button.
 3. You will now have successfully created a copy of the original repository within your GitHub account.
+
 
 - ### **Cloning the Repository**
   Follow these instructions to create a clone of the repository within your local development environment to make it easier to fix merge conflicts, add or remove files, and push larger commits.
@@ -227,19 +286,12 @@ Should you wish to 'Fork' or 'Clone' the repository please follow these instruct
 5. Type `git clone`, and then paste the specific URL you copied in Step 3.
 
 ---
-
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="pib"></p>
+<p align="right"><a href="#intro" id="b">Return to table of contents</a></p>
 
 ## **BUGS.**
 
 ---
-
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="fa"></p>
-
-## **FUTURE ASPIRATIONS.**
-
-
-<p align="right"><a href="#home">Return to table of contents</a></p><p id="tools"></p>
+<p align="right"><a href="#intro" id="tools">Return to table of contents</a></p>
 
 ## **TOOLS USED AND CODING INSPIRATION.**
 
@@ -260,4 +312,4 @@ The following tools, pages and tutorials were invaluable in helping complete thi
 
 
 
-<p align="right"><a href="#home">Return to table of contents</a></p>
+<p align="right"><a href="#intro">Return to table of contents</a></p>
