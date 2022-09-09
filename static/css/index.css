@@ -68,7 +68,64 @@
     margin-top: 30px;
     font-family: 'Poiret One';
     font-weight: bold;
+    cursor: pointer;
   }
+
+  /* TRANSITION SECTION */
+
+  #transition-section-1 {
+    background: rgba(255, 255, 255, 0.6);
+    display: none;
+  }
+  
+  #transition-section-2 {
+    background: rgba(255, 255, 255, 0.6);
+    display: none;
+  }
+
+  #transition-section-3 {
+    background: rgba(255, 255, 255, 0.6);
+    display: none;
+  }
+
+  .transition-heading {
+    
+  }
+
+  .transition-image {
+    
+  }
+
+  .transition-intro {
+    color: rgb(49, 49, 49);
+    text-align: center;
+    font-family: "Josefin Slab";
+    font-size: 2.5rem;
+  }
+  
+  .trainsition-ul {
+
+  }
+
+  /* ---- Transition Content ----*/
+.transition-content {
+  color: black;
+  font-family: nunito, roboto, sans-serif;
+  padding: 20px;
+}
+
+.transition-heading {
+}
+
+.login-button {
+  /* width: 180px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-top: 5px; */
+  margin: 0 auto;
+  text-align: center;
+}
   
   @media only screen and (max-width: 768px) {
 

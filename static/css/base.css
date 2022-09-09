@@ -112,27 +112,6 @@ body {
   margin-bottom:0;
 }
 
-/* ---- Transition Content ----*/
-.transition-content {
-  color: black;
-  font-family: nunito, roboto, sans-serif;
-  padding: 20px;
-}
-
-.catchy-headline {
-  text-align: center;
-}
-
-.login-button {
-  /* width: 180px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding-top: 5px; */
-  margin: 0 auto;
-  text-align: center;
-}
-
 @media only screen and (max-width: 768px) {
   .navbar-brand, .navbar-brand:hover {
     font-family: 'Poiret One';
@@ -170,3 +149,4 @@ body {
   }
 
 }
+

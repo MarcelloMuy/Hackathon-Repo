@@ -39,19 +39,19 @@
             <div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2">
                 <h1 id="who-heading" class="text-center">Who are YOU?</h1>
                 <ul class="who-list">
-                    <li class="who-list-option">
+                    <li id="who-option-1" class="who-list-option">
                         <span>
                             <p><i class="fa-regular fa-circle"></i> I'm still in school, and I want to learn how to
                                 code.</p>
                         </span>
                     </li>
-                    <li class="who-list-option">
+                    <li id="who-option-2" class="who-list-option">
                         <span>
                             <p><i class="fa-regular fa-circle"></i> I'm in college and have already started to learn how
                                 to code.</p>
                         </span>
                     </li>
-                    <li class="who-list-option">
+                    <li id="who-option-3" class="who-list-option">
                         <span>
                             <p><i class="fa-regular fa-circle"></i> I'm working already, but I'm considering a
                                 change to a career in coding.</p>
@@ -63,17 +63,16 @@
     </div>
 </section>
 
-<!-- Transition Content -->
-<section>
-    <div class="row g-0 bg-light position-relative">
+<!-- TRANSITION SECTION -->
+<section id="transition-section-1">
+    <div id="transition-young-learner" class="row g-0 position-relative">
         <div class="col-md-6 mb-md-0 p-md-4">
-            <img src="https://images.unsplash.com/photo-1580894895938-bd31a62ed8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                class="w-100" alt="Image of woman coding while seated on a couch">
+            <img src="{% static 'images/young-learner-resized' %}"
+                class="w-100 transition-image" alt="Image of woman coding while seated on a chair.">
         </div>
         <div class="col-md-6 p-4 ps-md-0">
-            <h5 class="mt-0 transition-content catchy-headline">Catchy Headline Here!!</h5>
-            <p>
-                <ul>
+            <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
+                <ul class="transition-ul">
                     <li class="transition-content">
                         We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
                         plenty of religious references that fail to make sense – Monty Python fans know what we mean.
@@ -95,7 +94,89 @@
                         plenty of religious references that fail to make sense – Monty Python fans know what we mean.
                     </li>
                 </ul>
-            </p>
+            <div class="row">
+                <div class="container-fluid col-md-12">
+                    <div class="login-button">
+                        <a href="#"><button class="btn btn-secondary">Start Your Journey</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="transition-section-2">
+    <div id="transition-student" class="row g-0 position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="https://images.unsplash.com/photo-1580894895938-bd31a62ed8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                class="w-100 transition-image" alt="Image of woman coding while seated on a chair.">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
+                <ul class="transition-ul">
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                </ul>
+            <div class="row">
+                <div class="container-fluid col-md-12">
+                    <div class="login-button">
+                        <a href="#"><button class="btn btn-secondary">Start Your Journey</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="transition-section-3">
+    <div id="transition-career-changer" class="row g-0 position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="https://images.unsplash.com/photo-1580894895938-bd31a62ed8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                class="w-100 transition-image" alt="Image of woman coding while seated on a chair.">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
+                <ul class="transition-ul">
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                    <li class="transition-content">
+                        We recommend Monty Python and the Holy Grail for some light-humoured dummy text. Get ready for
+                        plenty of religious references that fail to make sense – Monty Python fans know what we mean.
+                    </li>
+                </ul>
             <div class="row">
                 <div class="container-fluid col-md-12">
                     <div class="login-button">
