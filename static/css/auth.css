@@ -17,18 +17,48 @@
     padding: 20px;
     margin-bottom: 150px;
   }
+.auth-logout-container {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-family: "Comfortaa";
+    color: rgba(0, 0, 0, 0.7);
+    border: rgb(255, 255, 255) solid 3px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 200px;
+  }
 
+.auth-text {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 2rem;
+}
 .auth-form {
     padding-top: 50px;
     text-align: right;
     margin-right: 25%;
 }
 
+.auth-logout-form {
+    padding-top: 25px;
+    text-align: right;
+    margin-right: 25%;
+    margin-bottom: 0px;
+}
+
 .auth-button-container {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 45px;
     margin-bottom: 25px;
-    margin-left: 30%;
+    margin-left: 33%;
+}
+
+.auth-logout-button-container {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    margin-left: 33%;
 }
 
 .auth-button {
