@@ -16,7 +16,7 @@ class RoleAdmin(admin.ModelAdmin):
     """Admin Role"""
     list_display = (
         'name',
-        'desc',
+        'friendly_name',
     )
 
 

@@ -9,19 +9,21 @@ from django.dispatch import receiver
 class Role(models.Model):
     """A model for user role options"""
     name = models.CharField(max_length=250)
-    desc = models.TextField()
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.name
 
+    def get_friendly_name(self):
+        return self.friendly_name
 
 class UserProfile(models.Model):
     """A user profile model"""
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     role = models.ForeignKey(Role, null=True, on_delete=models.SET_NULL)
     level = models.PositiveSmallIntegerField(
-        default=0,
-        validators=[MinValueValidator(0), MaxValueValidator(5)]
+        default=1,
+        validators=[MinValueValidator(1), MaxValueValidator(5)]
         )
 
     def __str__(self):
@@ -33,6 +35,8 @@ class Resource(models.Model):
     name = models.CharField(max_length=250)
     link = models.URLField()
     roles = models.ManyToManyField(Role)
+    image = models.ImageField(null=True, blank=True)
+    summary = models.TextField()
     level = models.PositiveSmallIntegerField(
         default=0,
         validators=[MinValueValidator(0), MaxValueValidator(5)]
@@ -47,9 +51,6 @@ class Progress(models.Model):
     userprofile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     resource = models.ForeignKey(Resource, on_delete=models.CASCADE)
     done = models.BooleanField(default=False)
-
-    def __str__(self):
-        return self.userprofile.level
 
 
 @receiver(post_save, sender=User)
