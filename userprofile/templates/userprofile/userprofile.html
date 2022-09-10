@@ -23,23 +23,24 @@
         </form>
     {% else %}
         <div>
-            <h1>Hi {{ myprofile.user }}, you are a {{ myprofile.role }}</h1>
+            <h1 id="user-profile-heading">Hi {{ myprofile.user }}, you are a {{ myprofile.role }}</h1>
         </div>
         {% for resource in resources %}
             {% for role in resource.roles.all %}
                 {% if role == myprofile.role %}
-                    <div class="">
-                        <p>{{ resource.name }}</p>
-                        <p>{{ resource.summary }}</p>
-                        <a class="btn" href="{{ resource.link}}" target="_blank" rel="nofolow">Hllo</a>
-                    </div>
+                <div class="col-3">
+                    <div class="card user-profile-card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ resource.name }}</h5>
+                          <p class="card-text">{{ resource.summary}}</p>
+                          <a class="btn" href="{{ resource.link }}" target="_blank" rel="nofolow">Get Started</a>
+                        </div>
+                      </div>
+                </div>
                 {% endif %}
             {% endfor %}
         {% endfor %}
     {% endif %}
 {% endif %}
-
-</div>
-
 
 {% endblock %}
