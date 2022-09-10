@@ -33,7 +33,6 @@ class Resource(models.Model):
     name = models.CharField(max_length=250)
     link = models.URLField()
     roles = models.ManyToManyField(Role)
-    image = models.ImageField(null=True, blank=True)
     summary = models.TextField()
     level = models.PositiveSmallIntegerField(
         default=0,
