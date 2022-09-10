@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    {% block extra_css %}
+    {% endblock %}
 
 
 
@@ -28,8 +30,11 @@
         <div class="message-container"></div>
     {% endif %}
 
-    {% block content %}
-    {% endblock %}
+    <main class="mt-5 pt-5">
+
+        {% block content %}
+        {% endblock %}
+    </main>
     <div class="footer-basic">
       <footer>
           <div class="social">

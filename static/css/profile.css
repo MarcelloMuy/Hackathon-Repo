@@ -1,4 +1,7 @@
 /*---- LATEST PROFILE PAGE STYLES 09-09-2022    12:53 pm ----*/
+.myprofile-container {
+  padding-top: 100px;
+}
 
 .footer-basic {
     padding:40px 0;

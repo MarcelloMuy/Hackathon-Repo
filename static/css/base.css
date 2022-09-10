@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Roboto';
-  color: white;
+  color: black;
   margin: 0;
   background-color: rgb(27,32,40);
   background: url("/static/images/texture.jpg") no-repeat fixed;

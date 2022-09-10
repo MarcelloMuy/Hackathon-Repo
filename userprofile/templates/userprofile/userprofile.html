@@ -1,47 +1,45 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!-- CSS Links -->
+{% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+<!-- CSS Links -->
 {% block content %}
 
-<h1>
-    Hi {{ myprofile.user }}, you are a {{ myprofile.role }}!
-</h1>
 
 <!-- Selects resources that match user level -->
-{% for r in resources %}
-    {% if r.level <= myprofile.level %}
-    <!-- Card example -->
-    <div class="card" style="width: 18rem; background-color: black;">
-        <div class="card-body">
-            <p>
-               Article: {{ r.name }}
-            </p>
-            <!-- Form for article access -->
-            <form method="POST" action="{{ r.link }}" target="_blank">
-                {% csrf_token %}
-                <button class="btn btn-info" name="accessbtn">Open Article</button>
-            </form>
-        </div>
-    </div>
-    {% else %}
-    <!-- All other resources -->
-    <div class="card" style="width: 18rem; background-color: red;">
-        <div class="card-body">
-            <p>
-               Article: {{ r.name }}
-            </p>
-            <!-- Form for article access -->
-            <form method="POST" action="{{ r.link }}" target="_blank">
-                {% csrf_token %}
-                <button class="btn btn-info" name="accessbtn">Open Article</button>
-            </form>
-        </div>
-    </div>
-    {% endif %}
-{% endfor %}
 
-{{ progress }}
+
+{% if user.is_authenticated %}
+    {% if myprofile.role == null %}
+        <h1>Hi {{ myprofile.user }}, Please select your role:</h1>
+        <form method="POST" action="{% url 'userprofile' %}">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Submit</button>
+        </form>
+    {% else %}
+        <div>
+            <h1>Hi {{ myprofile.user }}, you are a {{ myprofile.role }}</h1>
+        </div>
+        {% for resource in resources %}
+            {% for role in resource.roles.all %}
+                {% if role == myprofile.role %}
+                    <div class="">
+                        <p>{{ resource.name }}</p>
+                        <p>{{ resource.summary }}</p>
+                        <a class="btn" href="{{ resource.link}}" target="_blank" rel="nofolow">Hllo</a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
+</div>
+
 
 {% endblock %}
