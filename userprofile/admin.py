@@ -9,6 +9,7 @@ class UserProfileAdmin(admin.ModelAdmin):
     """Admin profile"""
     list_display = (
         'user',
+        'role',
     )
 
 
@@ -16,7 +17,6 @@ class RoleAdmin(admin.ModelAdmin):
     """Admin Role"""
     list_display = (
         'name',
-        'friendly_name',
     )
 
 

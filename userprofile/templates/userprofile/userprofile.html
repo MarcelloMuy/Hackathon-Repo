@@ -10,6 +10,8 @@
 </h1>
 
 <!-- Selects resources that match user level -->
+
+
 {% for r in resources %}
     {% if r.level <= myprofile.level %}
     <!-- Card example -->
@@ -41,6 +43,18 @@
     </div>
     {% endif %}
 {% endfor %}
+{% if user.is_authenticated %}
+    {% if myprofile.role == null %}
+        <h1>Please select your role</h1>
+        <form method="POST" action="{% url 'userprofile' %}"> 
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Submit</button>
+        </form>
+    {% else %}
+        <p>Your role is: </p>{{ myprofile.role }}
+    {% endif %}
+{% endif %}
 
 {{ progress }}
 

@@ -100,7 +100,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 ACCOUNT_SESSION_REMEMBER = False
 
-ACCOUNT_FORMS = {'signup': 'Hackathon2022.forms.CustomSignupForm'}
+# ACCOUNT_FORMS = {'signup': 'Hackathon2022.forms.CustomSignupForm'}
 
 WSGI_APPLICATION = 'Hackathon2022.wsgi.application'
 
