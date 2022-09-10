@@ -1,0 +1,1 @@
+web: gunicorn Hackathon2022.wsgi:application
