@@ -25,21 +25,24 @@
         <div>
             <h1 id="user-profile-heading">Hi {{ myprofile.user }}, you are a {{ myprofile.role }}</h1>
         </div>
-        {% for resource in resources %}
-            {% for role in resource.roles.all %}
-                {% if role == myprofile.role %}
-                <div class="col-3">
-                    <div class="card user-profile-card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">{{ resource.name }}</h5>
-                          <p class="card-text">{{ resource.summary}}</p>
-                          <a class="btn" href="{{ resource.link }}" target="_blank" rel="nofolow">Get Started</a>
-                        </div>
-                      </div>
-                </div>
-                {% endif %}
+
+        <div class="row">
+            {% for resource in resources %}
+                {% for role in resource.roles.all %}
+                    {% if role == myprofile.role %}
+                    <div class="col-3">
+                        <div class="card user-profile-card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ resource.name }}</h5>
+                              <p class="card-text">{{ resource.summary}}</p>
+                              <a class="btn" href="{{ resource.link }}" target="_blank" rel="nofolow">Get Started</a>
+                            </div>
+                          </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
-        {% endfor %}
+        </div>
     {% endif %}
 {% endif %}
 
