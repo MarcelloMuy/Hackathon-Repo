@@ -115,7 +115,6 @@ WSGI_APPLICATION = 'Hackathon2022.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     print("heroku db")
-    print(os.environ.get("DATABASE_URL"))
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
