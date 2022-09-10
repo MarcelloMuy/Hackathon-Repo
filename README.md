@@ -79,52 +79,30 @@
 
 <p align="right"><a href="#intro" id="df">Return to table of contents</a></p>
 
-## **DESIRED FEATURES.**
+## **DESIRED FEATURES**
 
-- ### **TBC.**
+- ## Add levels of difficulty for user
+
+  - The learning path should have different levels of difficulty for the user to work through. Currently the users can work through their path but they have no feedback in terms of wwhat they are covering and where they are in relation to working through their overall learning path.
 
 <p align="center">
   <img src=""?raw=true alt=""></p>
 
-- ### **TBC**
+- ## Add individulised resources to the resource path
+
+  - The resources need to be filtered and applied for the learning path need to be individualised to the actual user who signed in. Currently the resources are not tailored to suit each type of user that logs in to work on their learning path.
 
 <p align="center">
   <img src=""?raw=true alt=""></p>
   
 
--  #### **TBC**
+-  ## Add image carousel to the home page
+
+  - An image slider/carousel has been designed as a possible solution to the issue on the home page where the user cannot toggle on and off the transition content correctly. Currently each button toggles on and off individually but not automatically when another button in the group is clicked.
 
 <p align="center">
- <img src=""?raw=true alt=""></p>
+ <img src="images/Carousel.png"?raw=true alt=""></p>
  <p align="center">
-
-
-- ## **TBC**
-
-<p align="center">
- <img src=""?raw=true alt=""></p>
- <p align="center">
-
- - ## **TBC**
-
-<p align="center">
- <img src=""?raw=true alt=""></p>
- <p align="center">
-
-  - ## **TBC**
-
-  <p align="center">
- <img src=""?raw=true alt=""></p>
- <p align="center">
-
- 
-
-  - ## **TBC**
-
-  <p align="center">
- <img src=""?raw=true alt=""></p>
- <p align="center">
-
 
 
 - ## **COLOUR PALETTE.**
