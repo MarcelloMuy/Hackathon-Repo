@@ -213,20 +213,40 @@ padding: 5px;
   background-color: #003049;
 }
 
+#team-card-1 .social li a:hover {
+  color: #003049;
+}
+
 #team-card-2 .team-card-picture::before, #team-card-2 .team-card-picture::after, #team-card-2 .social {
   background-color: #d62828;
+}
+
+#team-card-2 .social li a:hover {
+  color: #d62828;
 }
 
 #team-card-3 .team-card-picture::before, #team-card-3 .team-card-picture::after, #team-card-3 .social {
   background-color: #f77f00;
 }
 
+#team-card-3 .social li a:hover {
+  color: #f77f00;
+}
+
 #team-card-4 .team-card-picture::before, #team-card-4 .team-card-picture::after, #team-card-4 .social {
   background-color: #588157;
 }
 
+#team-card-4 .social li a:hover {
+  color: #588157;
+}
+
 #team-card-5 .team-card-picture::before, #team-card-5 .team-card-picture::after, #team-card-5 .social {
   background-color: #6d597a;
+}
+
+#team-card-5 .social li a:hover {
+  color: #6d597a;
 }
 
 .team-card:hover .team-card-picture::before {
