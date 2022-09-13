@@ -64,7 +64,6 @@
   .who-list {
     color: rgb(49, 49, 49);
     list-style-type: none;
-    align-items: center;
     text-align: center;
   }
   
@@ -208,6 +207,26 @@ padding: 5px;
   opacity: 0.9;
   transform: scale(3);
   transition: all 0.3s linear 0s;
+}
+
+#team-card-1 .team-card-picture::before, #team-card-1 .team-card-picture::after, #team-card-1 .social {
+  background-color: #003049;
+}
+
+#team-card-2 .team-card-picture::before, #team-card-2 .team-card-picture::after, #team-card-2 .social {
+  background-color: #d62828;
+}
+
+#team-card-3 .team-card-picture::before, #team-card-3 .team-card-picture::after, #team-card-3 .social {
+  background-color: #f77f00;
+}
+
+#team-card-4 .team-card-picture::before, #team-card-4 .team-card-picture::after, #team-card-4 .social {
+  background-color: #588157;
+}
+
+#team-card-5 .team-card-picture::before, #team-card-5 .team-card-picture::after, #team-card-5 .social {
+  background-color: #6d597a;
 }
 
 .team-card:hover .team-card-picture::before {
