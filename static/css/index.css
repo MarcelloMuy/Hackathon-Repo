@@ -81,9 +81,27 @@
     background: rgba(255, 255, 255, 0.6);
     display: none;
   }
+
+  #transition-icon-circle-1 {
+    display: contents;
+  }
+
+  #transition-icon-tick-1 {
+    color: green;
+    display: none;
+  }
   
   #transition-section-2 {
     background: rgba(255, 255, 255, 0.6);
+    display: none;
+  }
+
+  #transition-icon-circle-2 {
+    display: contents;
+  }
+
+  #transition-icon-tick-2 {
+    color: green;
     display: none;
   }
 
@@ -92,12 +110,13 @@
     display: none;
   }
 
-  .transition-heading {
-    
+  #transition-icon-circle-3 {
+    display: contents;
   }
 
-  .transition-image {
-    
+  #transition-icon-tick-3 {
+    color: green;
+    display: none;
   }
 
   .transition-intro {
@@ -107,9 +126,6 @@
     font-size: 2.5rem;
   }
   
-  .trainsition-ul {
-
-  }
 
   /* ---- Transition Content ----*/
 .transition-content {
