@@ -33,173 +33,175 @@
 </section>
 
 <!-- WHO SECTION -->
-<section id="who-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2">
-                <h1 id="who-heading" class="text-center">Who are YOU?</h1>
-                <ul class="who-list">
-                    <li id="who-option-1" class="who-list-option">
-                        <span>
-                            <p><i id="transition-icon-circle-1" class="fa-regular fa-circle"></i><i id="transition-icon-tick-1" class="fa-regular fa-circle-check"></i> I'm still in school, and I want to learn how to
-                                code.</p>
-                        </span>
-                    </li>
-                    <li id="who-option-2" class="who-list-option">
-                        <span>
-                            <p><i id="transition-icon-circle-2" class="fa-regular fa-circle"></i><i id="transition-icon-tick-2" class="fa-regular fa-circle-check"></i> I'm in college and have already started to learn how
-                                to code.</p>
-                        </span>
-                    </li>
-                    <li id="who-option-3" class="who-list-option">
-                        <span>
-                            <p><i id="transition-icon-circle-3" class="fa-regular fa-circle"></i><i id="transition-icon-tick-3" class="fa-regular fa-circle-check"></i> I'm working already, but I'm considering a
-                                change to a career in coding.</p>
-                        </span>
-                    </li>
-                </ul>
+{% if not request.user.is_authenticated %}
+    <section id="who-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2">
+                    <h1 id="who-heading" class="text-center">Who are YOU?</h1>
+                    <ul class="who-list">
+                        <li id="who-option-1" class="who-list-option">
+                            <span>
+                                <p><i id="transition-icon-circle-1" class="fa-regular fa-circle"></i><i id="transition-icon-tick-1" class="fa-regular fa-circle-check"></i> I'm still in school, and I want to learn how to
+                                    code.</p>
+                            </span>
+                        </li>
+                        <li id="who-option-2" class="who-list-option">
+                            <span>
+                                <p><i id="transition-icon-circle-2" class="fa-regular fa-circle"></i><i id="transition-icon-tick-2" class="fa-regular fa-circle-check"></i> I'm in college and have already started to learn how
+                                    to code.</p>
+                            </span>
+                        </li>
+                        <li id="who-option-3" class="who-list-option">
+                            <span>
+                                <p><i id="transition-icon-circle-3" class="fa-regular fa-circle"></i><i id="transition-icon-tick-3" class="fa-regular fa-circle-check"></i> I'm working already, but I'm considering a
+                                    change to a career in coding.</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="transition-section-1">
-        <div id="transition-young-learner" class="row g-0 position-relative">
-            <div class="col-md-6 mb-md-0 p-md-4">
-                <img id="transition-image-1" src="{% static 'images/young-learner-resized.png' %}" class="w-100 transition-image"
-                    alt="Image of woman coding while seated on a chair.">
-            </div>
-            <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
-                <ul id="transition-ul-1">
-                    <li class="transition-content">
-                        Learning to code needs critical thinking and encourages inquisitiveness. Kids learning to
-                        code at an early age are preparing for the future. Coding helps develop communication,
-                        creativity, mathematical and writing skills as well as building confidence.
-                    </li>
-                    <li class="transition-content">
-                        The computational thinking involved in coding genuinely contributes to improved reading
-                        comprehension.
-                    </li>
-                    <li class="transition-content">
-                        Kids exposed to new languages at a young age develop stronger verbal and written skills.
-                        Programming languages help children to be better communicators and train logical
-                        thinking abilities.
-                    </li>
-                    <li class="transition-content">
-                        In the relatively near future not having basic coding skills will be tantamount to not
-                        knowing how to read. It is a basic literacy requirement. Most modern roles require
-                        basic IT skills with, for example, retail and fast food positions requiring competence
-                        with tech and computers .
-                    </li>
-                    <li class="transition-content">
-                        Learning to deal with &#39;failure is important. Learning to be more resilient and to try
-                        again while learning from your mistakes is an intrinsic part of the coding experience
-                        and teaches young kids the importance of trying again until you succeed.
-                    </li>
-                </ul>
-                <div class="start-journey-button-container">
-                    <div class="text-center">
-                        <a href="{% url 'account_signup'%}"><button class="start-journey-button animate__animated animate__pulse animate__infinite">Start Your Journey</button></a>
+        <div id="transition-section-1">
+            <div id="transition-young-learner" class="row g-0 position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img id="transition-image-1" src="{% static 'images/young-learner-resized.png' %}" class="w-100 transition-image"
+                        alt="Image of woman coding while seated on a chair.">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
+                    <ul id="transition-ul-1">
+                        <li class="transition-content">
+                            Learning to code needs critical thinking and encourages inquisitiveness. Kids learning to
+                            code at an early age are preparing for the future. Coding helps develop communication,
+                            creativity, mathematical and writing skills as well as building confidence.
+                        </li>
+                        <li class="transition-content">
+                            The computational thinking involved in coding genuinely contributes to improved reading
+                            comprehension.
+                        </li>
+                        <li class="transition-content">
+                            Kids exposed to new languages at a young age develop stronger verbal and written skills.
+                            Programming languages help children to be better communicators and train logical
+                            thinking abilities.
+                        </li>
+                        <li class="transition-content">
+                            In the relatively near future not having basic coding skills will be tantamount to not
+                            knowing how to read. It is a basic literacy requirement. Most modern roles require
+                            basic IT skills with, for example, retail and fast food positions requiring competence
+                            with tech and computers .
+                        </li>
+                        <li class="transition-content">
+                            Learning to deal with &#39;failure is important. Learning to be more resilient and to try
+                            again while learning from your mistakes is an intrinsic part of the coding experience
+                            and teaches young kids the importance of trying again until you succeed.
+                        </li>
+                    </ul>
+                    <div class="start-journey-button-container">
+                        <div class="text-center">
+                            <a href="{% url 'account_signup'%}"><button class="start-journey-button animate__animated animate__pulse animate__infinite">Start Your Journey</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="transition-section-2">
-        <div id="transition-student" class="row g-0 position-relative">
-            <div class="col-md-6 mb-md-0 p-md-4">
-                <img id="transition-image-2" src="{% static 'images/student-resized.png' %}" class="w-100 transition-image"
-                    alt="Image of woman coding while seated on a chair.">
-            </div>
-            <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
-                <ul id="transition-ul-2">
-                    <li class="transition-content">
-                        With more than 54% of professional coders writing their first line of code in their mid teens
-                        and coding now a crucial component of a well rounded education. Gaining these skills
-                        during school age is now mandatory especially as mainstream education hasn&#39;t yet met the
-                        demand for these skills.
-                    </li>
-                    <li class="transition-content">
-                        Anything that builds confidence and a positive self-image is important. Coding
-                        demonstrates and teaches that any issue is fixable, any obstacle can be conquered through
-                        repeated persistence and teamwork. Programming cultivates the perfect environment for
-                        collaborative working
-                    </li>
-                    <li class="transition-content">
-                        The future is a digital one that will be structured on a technology based foundation. If
-                        today&#39;s teens don&#39;t have a solid understanding of this future then they will effectively
-                        be
-                        preventing themselves from gaining access to opportunities.
-                    </li>
-                    <li class="transition-content">
-                        Extracurricular programming studies provide additional skill-sets that boost higher
-                        education portfolios and are arguably more essential for a fully rounded education than
-                        before.
-                    </li>
-                    <li class="transition-content">
-                        The experience gained from learning programming skills in the classroom prepares
-                        students for real-world situations and prepares them for a strong progression into the
-                        work environment.
-                    </li>
-                </ul>
-                <div class="start-journey-button-container">
-                    <div class="text-center">
-                        <a href="{% url 'account_signup'%}"><button class="start-journey-button animate__animated animate__pulse animate__infinite">Start Your Journey</button></a>
+        <div id="transition-section-2">
+            <div id="transition-student" class="row g-0 position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img id="transition-image-2" src="{% static 'images/student-resized.png' %}" class="w-100 transition-image"
+                        alt="Image of woman coding while seated on a chair.">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
+                    <ul id="transition-ul-2">
+                        <li class="transition-content">
+                            With more than 54% of professional coders writing their first line of code in their mid teens
+                            and coding now a crucial component of a well rounded education. Gaining these skills
+                            during school age is now mandatory especially as mainstream education hasn&#39;t yet met the
+                            demand for these skills.
+                        </li>
+                        <li class="transition-content">
+                            Anything that builds confidence and a positive self-image is important. Coding
+                            demonstrates and teaches that any issue is fixable, any obstacle can be conquered through
+                            repeated persistence and teamwork. Programming cultivates the perfect environment for
+                            collaborative working
+                        </li>
+                        <li class="transition-content">
+                            The future is a digital one that will be structured on a technology based foundation. If
+                            today&#39;s teens don&#39;t have a solid understanding of this future then they will effectively
+                            be
+                            preventing themselves from gaining access to opportunities.
+                        </li>
+                        <li class="transition-content">
+                            Extracurricular programming studies provide additional skill-sets that boost higher
+                            education portfolios and are arguably more essential for a fully rounded education than
+                            before.
+                        </li>
+                        <li class="transition-content">
+                            The experience gained from learning programming skills in the classroom prepares
+                            students for real-world situations and prepares them for a strong progression into the
+                            work environment.
+                        </li>
+                    </ul>
+                    <div class="start-journey-button-container">
+                        <div class="text-center">
+                            <a href="{% url 'account_signup'%}"><button class="start-journey-button animate__animated animate__pulse animate__infinite">Start Your Journey</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="transition-section-3">
-        <div id="transition-career-changer" class="row g-0 position-relative">
-            <div class="col-md-6 mb-md-0 p-md-4">
-                <img id="transition-image-3" src="{% static 'images/career-changer-resized.png' %}" class="w-100 transition-image"
-                    alt="Image of woman coding while seated on a chair.">
-            </div>
-            <div class="col-md-6 p-4 ps-md-0">
-                <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
-                <ul id="transition-ul-3">
-                    <li class="transition-content">
-                        Fact: Only around 5% of software developers worldwide are women. But it’s not a
-                        permanent situation. Things are changing for the better and if you’re seriously considering
-                        a career in computing you may be thinking “Is coding a good career choice for me?”
-                    </li>
-                    <li class="transition-content">
-                        Why go for a job as a developer? It’s a brilliant job! Software developers roles are regularly
-                        some of the best salaried. It’s a fast growing industry. Coding jobs in the U.S. alone are
-                        predicted to increase by over 22% within the next decade.. There are over quarter of a
-                        million positions needing skilled coders right now!
-                    </li>
-                    <li class="transition-content">
-                        Depending on the role it isn&#39;t mandatory to have a Computer Science degree to be
-                        employed as a software developer. A high percentage of software developers consider
-                        themselves self taught or have come into the sector through alternative educational paths.
-                        Breadth of experience is considered the most important criteria when hiring developers,
-                        with problem solving and communication skills also high on the list.
-                    </li>
-                    <li class="transition-content">
-                        It’s easier to gain relevant skills without having to obtain an expensive and time consuming
-                        degree, there are many varied options for self learning and supported courses, including
-                        studying online and boot camps amongst the most prominent.
-                    </li>
-                    <li class="transition-content">
-                        Although the gender bias within the industry is still a big topic of concern it is improving
-                        every day and there are many ways to kick off a coding career. Software developers are
-                        employed by all types of companies both large and small. A high percentage of coders
-                        work remotely, so there are always healthy alternatives to purely office based roles.
-                    </li>
-                </ul>
-                <div class="start-journey-button-container">
-                    <div class="text-center">
-                        <a href="{% url 'account_signup'%}"><button class="start-journey-button animate__animated animate__pulse animate__infinite">Start Your Journey</button></a>
+        <div id="transition-section-3">
+            <div id="transition-career-changer" class="row g-0 position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img id="transition-image-3" src="{% static 'images/career-changer-resized.png' %}" class="w-100 transition-image"
+                        alt="Image of woman coding while seated on a chair.">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h5 class="mt-0 transition-intro">Why should I Learn to Code?</h5>
+                    <ul id="transition-ul-3">
+                        <li class="transition-content">
+                            Fact: Only around 5% of software developers worldwide are women. But it’s not a
+                            permanent situation. Things are changing for the better and if you’re seriously considering
+                            a career in computing you may be thinking “Is coding a good career choice for me?”
+                        </li>
+                        <li class="transition-content">
+                            Why go for a job as a developer? It’s a brilliant job! Software developers roles are regularly
+                            some of the best salaried. It’s a fast growing industry. Coding jobs in the U.S. alone are
+                            predicted to increase by over 22% within the next decade.. There are over quarter of a
+                            million positions needing skilled coders right now!
+                        </li>
+                        <li class="transition-content">
+                            Depending on the role it isn&#39;t mandatory to have a Computer Science degree to be
+                            employed as a software developer. A high percentage of software developers consider
+                            themselves self taught or have come into the sector through alternative educational paths.
+                            Breadth of experience is considered the most important criteria when hiring developers,
+                            with problem solving and communication skills also high on the list.
+                        </li>
+                        <li class="transition-content">
+                            It’s easier to gain relevant skills without having to obtain an expensive and time consuming
+                            degree, there are many varied options for self learning and supported courses, including
+                            studying online and boot camps amongst the most prominent.
+                        </li>
+                        <li class="transition-content">
+                            Although the gender bias within the industry is still a big topic of concern it is improving
+                            every day and there are many ways to kick off a coding career. Software developers are
+                            employed by all types of companies both large and small. A high percentage of coders
+                            work remotely, so there are always healthy alternatives to purely office based roles.
+                        </li>
+                    </ul>
+                    <div class="start-journey-button-container">
+                        <div class="text-center">
+                            <a href="{% url 'account_signup'%}"><button class="start-journey-button animate__animated animate__pulse animate__infinite">Start Your Journey</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+{% endif %}
 
 <!-- TEAM SECTION -->
 
