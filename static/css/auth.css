@@ -53,6 +53,8 @@
   margin-top: 10px;
   margin-left: 17%;
   width: 100%;
+  border: solid 1px white;
+  border-radius: 10px;
 }
 
 .auth-logout-form {
