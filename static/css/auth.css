@@ -36,8 +36,23 @@
 }
 .auth-form {
     padding-top: 50px;
-    text-align: right;
+    text-align: left;
     margin-right: 25%;
+}
+
+.auth-form p {
+    margin-right: 0;
+}
+
+.auth-form p label{
+    text-align: left;
+    margin-left: 17%;
+}
+
+.auth-form p input{
+  margin-top: 10px;
+  margin-left: 17%;
+  width: 100%;
 }
 
 .auth-logout-form {
@@ -151,5 +166,4 @@
     font-size: 15px;
     align-items: center;
   }
-  
 }
