@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
 {% endblock %}
 
 
@@ -15,12 +15,23 @@
 
 {% if user.is_authenticated %}
     {% if myprofile.role == null %}
-        <h1>Hi {{ myprofile.user }}, Please select your role:</h1>
-        <form method="POST" action="{% url 'userprofile' %}">
-            {% csrf_token %}
-            {{ form }}
-            <button type="submit">Submit</button>
-        </form>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3 col-12">
+                  <h1 class="profile-form-heading">Hi {{ myprofile.user }}!<br> Please select your role:</h1>
+                  <div class="profile-form-container">
+                      <form class="profile-form" method="POST" action="{% url 'userprofile' %}">
+                          {% csrf_token %}
+                          {{ form }}
+                          <div class="profile-button-container">
+                              <button class="profile-form-button" type="submit">Submit</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </div>
     {% else %}
         <div>
             <h1 id="user-profile-heading">Hi {{ myprofile.user }}, you are a {{ myprofile.role }}</h1>
