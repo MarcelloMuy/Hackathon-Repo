@@ -47,13 +47,14 @@
 .auth-form p label{
     text-align: left;
     margin-left: 17%;
+    display: none;
 }
 
 .auth-form p input{
   margin-top: 10px;
   margin-left: 17%;
   width: 100%;
-  border: solid 1px white;
+  border: solid 4px white;
   border-radius: 10px;
 }
 
