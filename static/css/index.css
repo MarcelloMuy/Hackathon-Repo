@@ -131,10 +131,10 @@
   }
   
 
-  /* ---- Transition Content ----*/
 .transition-content {
-  color: black;
-  font-family: nunito, roboto, sans-serif;
+  color: rgb(49, 49, 49);
+  font-family: 'Comfortaa', roboto, sans-serif;
+  font-size: 1em;
   padding: 20px;
 }
 
@@ -237,7 +237,6 @@ text-decoration: none;
   position: relative;
   border: #ffffff solid 4px;
   border-radius: 20px;
-  /* background-image: url("/static/images/card-background.jpg") ; */
   height: 340px;
 }
 
@@ -391,13 +390,13 @@ padding: 5px;
     #intro-container {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 150px;
+      margin-top: 50px;
       border-radius: 40px;
       padding: 0px;
     }
 
     #intro-heading {
-      font-size: 2rem;
+      font-size: 3rem;
       font-family: 'Poiret One';
       padding: 10px;
     }
@@ -442,6 +441,12 @@ padding: 5px;
     margin-top: 20px;
     font-family: 'Poiret One';
     padding: 0px;
+  }
+
+  .transition-content {
+    font-size: 0.5em;
+    padding: 0px;
+    margin-top: 20px;
   }
 
 }
