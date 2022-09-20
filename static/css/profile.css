@@ -87,3 +87,122 @@
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
   }
+
+
+  #user-profile-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Comfortaa";
+    color: grey;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-bottom: solid white 10px;
+    border-radius: 50%;
+    padding-bottom: 25px;
+  }
+
+  .resource-display-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Comfortaa";
+    color: grey;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: solid white 10px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .resource-display {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-family: "Comfortaa";
+    color: grey;
+    border: rgb(255, 255, 255) solid 8px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  
+
+  .resource-display .card {
+    border: rgb(233, 233, 233) solid 8px;
+    border-radius: 10px;
+    height: 450px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+  }
+
+  .resource-display .resource-heading {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: rgb(228, 228, 228) solid 8px;
+    background-color: rgba(0, 128, 0, 0.2);
+    font-size: 1.5rem;
+  }
+
+  .resource-display .card .card-title{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .resource-display .card .card-text{
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .resource-display .resource-button-container {
+      text-align: center;
+      margin-top: auto;
+  }
+
+  .resource-display .resource-button {
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Comfortaa",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    bottom: 25px;
+  }
+  .resource-display .resource-button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  .resource-display .resource-button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+  }
+  .resource-display .resource-button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+  }
