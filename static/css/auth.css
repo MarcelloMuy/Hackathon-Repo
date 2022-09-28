@@ -3,7 +3,7 @@
     font-size: 3rem;
     font-family: "Comfortaa";
     color: grey;
-    margin-top: 250px;
+    margin-top: 125px;
 }
 
 .auth-container {
@@ -26,7 +26,7 @@
     background-color: rgba(255,255,255,0.6);
     border-radius: 50px;
     padding: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
   }
 
 .auth-text {
@@ -36,8 +36,26 @@
 }
 .auth-form {
     padding-top: 50px;
-    text-align: right;
+    text-align: left;
     margin-right: 25%;
+}
+
+.auth-form p {
+    margin-right: 0;
+}
+
+.auth-form p label{
+    text-align: left;
+    margin-left: 17%;
+    display: none;
+}
+
+.auth-form p input{
+  margin-top: 10px;
+  margin-left: 17%;
+  width: 100%;
+  border: solid 4px white;
+  border-radius: 10px;
 }
 
 .auth-logout-form {
@@ -151,5 +169,4 @@
     font-size: 15px;
     align-items: center;
   }
-  
 }

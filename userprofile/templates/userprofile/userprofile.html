@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
 {% endblock %}
 
 
@@ -14,32 +14,100 @@
 
 
 {% if user.is_authenticated %}
+<div class="container">
     {% if myprofile.role == null %}
-        <h1>Hi {{ myprofile.user }}, Please select your role:</h1>
-        <form method="POST" action="{% url 'userprofile' %}">
-            {% csrf_token %}
-            {{ form }}
-            <button type="submit">Submit</button>
-        </form>
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3 col-12">
+                <h1 class="profile-form-heading">Hi {{ myprofile.user }}!<br> Please select your role:</h1>
+                <div class="profile-form-container">
+                    <form class="profile-form" method="POST" action="{% url 'userprofile' %}">
+                        {% csrf_token %}
+                        {{ form }}
+                        <div class="profile-button-container">
+                            <button class="profile-form-button" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
     {% else %}
         <div>
-            <h1>Hi {{ myprofile.user }}, you are a {{ myprofile.role }}</h1>
+            <h1 id="user-profile-heading">Hi {{ myprofile.user | title }}, you are a {{ myprofile.role }}!</h1>
         </div>
-        {% for resource in resources %}
-            {% for role in resource.roles.all %}
-                {% if role == myprofile.role %}
-                    <div class="">
-                        <p>{{ resource.name }}</p>
-                        <p>{{ resource.summary }}</p>
-                        <a class="btn" href="{{ resource.link}}" target="_blank" rel="nofolow">Hllo</a>
-                    </div>
+        <h2 class="resource-display-heading">Level 1</h2>
+        <div class="row resource-display">
+            {% for resource in resources %}
+                {% if resource.level == 1 %}
+                    {% for role in resource.roles.all %}
+                        {% if role == myprofile.role %}
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 18rem;">
+                                <div>
+                                    <h2 class="resource-heading">{{ resource.name | title}}</h2>
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text">{{ resource.summary }}</p>
+                                </div>
+                                <div class="resource-button-container">
+                                  <a href="{{ resource.link }}" class="btn resource-button" target="_blank" rel="nofollow">Let's go!</a>
+                                </div>
+                              </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                 {% endif %}
             {% endfor %}
-        {% endfor %}
+        </div>
+        <h2 class="resource-display-heading">Level 2</h2>
+        <div class="row resource-display">
+            {% for resource in resources %}
+                {% if resource.level == 2 %}
+                    {% for role in resource.roles.all %}
+                        {% if role == myprofile.role %}
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 18rem;">
+                                <div>
+                                    <h2 class="resource-heading">{{ resource.name | title}}</h2>
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text">{{ resource.summary }}</p>
+                                </div>
+                                <div class="resource-button-container">
+                                  <a href="{{ resource.link }}" class="btn resource-button" target="_blank" rel="nofollow">Let's go!</a>
+                                </div>
+                              </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <h2 class="resource-display-heading">Level 3</h2>
+        <div class="row resource-display">
+            {% for resource in resources %}
+                {% if resource.level == 3 %}
+                    {% for role in resource.roles.all %}
+                        {% if role == myprofile.role %}
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 18rem;">
+                                <div>
+                                    <h2 class="resource-heading">{{ resource.name | title}}</h2>
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text">{{ resource.summary }}</p>
+                                </div>
+                                <div class="resource-button-container">
+                                  <a href="{{ resource.link }}" class="btn resource-button" target="_blank" rel="nofollow">Let's go!</a>
+                                </div>
+                              </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
     {% endif %}
-{% endif %}
-
 </div>
-
+{% endif %}
 
 {% endblock %}

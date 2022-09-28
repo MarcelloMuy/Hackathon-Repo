@@ -5,7 +5,7 @@
 }
 
 #intro-container {
-    margin-top: 250px;
+    margin-top: 150px;
     border: white solid 4px;
     border-radius: 40px;
     padding: 0px;
@@ -35,7 +35,7 @@
   }
   
   #hero-image {
-    margin-top: 250px;
+    margin-top: 150px;
     margin-left: 75px;
   }
   
@@ -43,17 +43,19 @@
   
   #who-section {
     margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     background: rgba(255, 255, 255, 0.6);
-    padding-bottom: 100px;
-    border-radius: 150px 150px 0px 0px;
+    border-radius: 50px 50px 50px 50px;
     border-top: white solid 3px;
-    border-left: rgba(255, 255, 255, 0.5) solid 0.5px;
-    border-right: rgba(255, 255, 255, 0.5) solid 0.5px;
+    border-bottom: white solid 5px;
+    border-left: rgba(255, 255, 255, 0.5) solid 5px;
+    border-right: rgba(255, 255, 255, 0.5) solid 5px;
   }
   
   #who-heading {
     margin-top: 35px;
-    font-size: 3rem;
+    font-size: 3rem !important;
     font-family: 'Josefin Slab';
     color: rgb(49, 49, 49);
   }
@@ -61,6 +63,7 @@
   .who-list {
     color: rgb(49, 49, 49);
     list-style-type: none;
+    text-align: center;
   }
   
   .who-list-option {
@@ -77,9 +80,27 @@
     background: rgba(255, 255, 255, 0.6);
     display: none;
   }
+
+  #transition-icon-circle-1 {
+    display: contents;
+  }
+
+  #transition-icon-tick-1 {
+    color: green;
+    display: none;
+  }
   
   #transition-section-2 {
     background: rgba(255, 255, 255, 0.6);
+    display: none;
+  }
+
+  #transition-icon-circle-2 {
+    display: contents;
+  }
+
+  #transition-icon-tick-2 {
+    color: green;
     display: none;
   }
 
@@ -88,12 +109,18 @@
     display: none;
   }
 
-  .transition-heading {
-    
+  #transition-icon-circle-3 {
+    display: contents;
+  }
+
+  #transition-icon-tick-3 {
+    color: green;
+    display: none;
   }
 
   .transition-image {
-    
+    height: auto;
+    border-radius: 50px;
   }
 
   .transition-intro {
@@ -103,30 +130,259 @@
     font-size: 2.5rem;
   }
   
-  .trainsition-ul {
 
-  }
-
-  /* ---- Transition Content ----*/
 .transition-content {
-  color: black;
-  font-family: nunito, roboto, sans-serif;
+  color: rgb(49, 49, 49);
+  font-family: 'Comfortaa', roboto, sans-serif;
+  font-size: 1em;
   padding: 20px;
 }
 
-.transition-heading {
+.start-journey-button-container a{
+text-decoration: none;
 }
 
-.login-button {
-  /* width: 180px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding-top: 5px; */
-  margin: 0 auto;
+.start-journey-button {
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Comfortaa",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 25px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
-  
+
+.start-journey-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+  background-color: #FCFCFD;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.start-journey-button:active {
+  transform: translateY(2px);
+  text-decoration: none !important;
+}
+
+/* User Profile Page */
+
+#user-profile-heading {
+  margin-top: 35px;
+  font-size: 3rem;
+  font-family: 'Josefin Slab';
+  color: rgb(49, 49, 49);
+}
+
+.user-profile-card {
+  margin-top: 250px;
+  border: white solid 4px;
+  border-radius: 40px;
+  color: rgb(49, 49, 49);
+  padding: 0px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+
+/*TEAM SECTION */
+
+#team-section {
+  text-align: center;
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.6);
+  padding-bottom: 100px;
+  border-radius: 150px 150px 0px 0px;
+  border-top: white solid 3px;
+  border-left: rgba(255, 255, 255, 0.5) solid 0.5px;
+  border-right: rgba(255, 255, 255, 0.5) solid 0.5px;
+}
+
+#team-heading {
+  font-family: 'Josefin Slab';
+  font-size: 3rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.team-card {
+  font-family: 'Montserrat';
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border: #ffffff solid 4px;
+  border-radius: 20px;
+  height: 340px;
+}
+
+.team-card .name{
+font-size: 1.46rem;
+padding: 5px;
+}
+
+.team-card .team-card-picture {
+  display: inline-block;
+  height: 140px;
+  width: 140px;
+  margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
+  border-radius: 50%;
+}
+
+.team-card .team-card-picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #c9e4d1;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+/* INDIVIDUAL CARD COLOURS */
+
+#team-card-1 .team-card-picture::before, #team-card-1 .team-card-picture::after, #team-card-1 .social {
+  background-color: #003049;
+}
+
+#team-card-1 .social li a:hover {
+  color: #003049;
+}
+
+#team-card-2 .team-card-picture::before, #team-card-2 .team-card-picture::after, #team-card-2 .social {
+  background-color: #d62828;
+}
+
+#team-card-2 .social li a:hover {
+  color: #d62828;
+}
+
+#team-card-3 .team-card-picture::before, #team-card-3 .team-card-picture::after, #team-card-3 .social {
+  background-color: #f77f00;
+}
+
+#team-card-3 .social li a:hover {
+  color: #f77f00;
+}
+
+#team-card-4 .team-card-picture::before, #team-card-4 .team-card-picture::after, #team-card-4 .social {
+  background-color: #588157;
+}
+
+#team-card-4 .social li a:hover {
+  color: #588157;
+}
+
+#team-card-5 .team-card-picture::before, #team-card-5 .team-card-picture::after, #team-card-5 .social {
+  background-color: #6d597a;
+}
+
+#team-card-5 .social li a:hover {
+  color: #6d597a;
+}
+
+.team-card:hover .team-card-picture::before {
+  height: 100%;
+}
+
+.team-card .team-card-picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #c9e4d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.team-card .team-card-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.team-card:hover .team-card-picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.team-card .title {
+  display: block;
+  font-size: 1rem;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.team-card .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #c9e4d1;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.team-card:hover .social {
+  bottom: 0;
+}
+
+.team-card .social li {
+  display: inline-block;
+}
+
+.team-card .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.team-card .social li a:hover {
+  color: #c9e4d1;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* MEDIA QUERIES */
   @media only screen and (max-width: 768px) {
 
     /* INTRO SECTION */
@@ -134,13 +390,13 @@
     #intro-container {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 150px;
+      margin-top: 50px;
       border-radius: 40px;
       padding: 0px;
     }
 
     #intro-heading {
-      font-size: 2rem;
+      font-size: 3rem;
       font-family: 'Poiret One';
       padding: 10px;
     }
@@ -160,15 +416,17 @@
   
   #who-section {
     margin-top: 25px;
+    font-size: 2rem !important;
     padding: 5px;
     padding-bottom: 100px;
     border-radius: 150px 150px 0px 0px;
     border-top: white solid 3px;
     border-left: rgba(255, 255, 255, 0.5) solid 0.5px;
     border-right: rgba(255, 255, 255, 0.5) solid 0.5px;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
   }
-  
+
   #who-heading {
     margin-top: 35px;
     font-size: 1.8rem;
@@ -184,4 +442,12 @@
     font-family: 'Poiret One';
     padding: 0px;
   }
+
+  .transition-content {
+    font-size: 0.5em;
+    padding: 0px;
+    margin-top: 20px;
   }
+
+}
+  

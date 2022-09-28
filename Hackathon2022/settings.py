@@ -29,7 +29,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'SecretKey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEVELOPMENT', False)
-
 ALLOWED_HOSTS = ['my-code-journey.herokuapp.com', 'localhost']
 
 
@@ -102,7 +101,7 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = False
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/userprofile/'
 ACCOUNT_SESSION_REMEMBER = False
 
 # ACCOUNT_FORMS = {'signup': 'Hackathon2022.forms.CustomSignupForm'}
